@@ -84,9 +84,9 @@ if submitted:
         st.error("Could not read feature names from the model. Re‑save the pickle with scikit‑learn ≥1.0 so it includes `feature_names_in_`.")
         st.stop()
 
-    # Build a row that matches the model's exact training columns
+    # Building a row that matches the model's exact training columns
     values = {}
-    # First, create a dict of all UI values we can map from
+    # First, creating a dict of all UI values we can map from
     ui = {
         "Age": int(age),
         "Diabetes": int(diabetes),
@@ -96,19 +96,18 @@ if submitted:
         "KnownAllergies": int(allergy),
         "HistoryOfCancerInFamily": int(cancerfam),
         "NumberOfMajorSurgeries": int(surgeries),
-        "Height": float(height_cm),         # if model used raw height (cm)
-        "Weight": float(weight_kg),         # if model used raw weight (kg)
-        "BMI": float(bmi),                  # if model used BMI
+        "Height": float(height_cm),         
+        "Weight": float(weight_kg),         
+        "BMI": float(bmi),                  
     }
 
-    # Now fill required features in the exact order
+    # Now filling required features in the exact order
     missing = []
     for f in FEATURES:
         if f in ui:
             values[f] = ui[f]
         else:
-            # allow unseen columns to default to 0 if they are binary-like; otherwise mark missing
-            # (generally shouldn't happen if the model came from your project)
+            # allowing unseen columns to default to 0 if they are binary-like; otherwise mark missing
             missing.append(f)
 
     if missing:
@@ -128,3 +127,4 @@ if submitted:
         st.error(f"Prediction failed: {e}")
 
 st.caption("Tip: This app auto-detects whether the model expects BMI or Height/Weight and builds inputs accordingly.")
+
