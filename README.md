@@ -31,8 +31,3 @@ A complete ML workflow to predict health insurance premium prices and a Streamli
 - `requirements.txt` – Python deps.
 - `.streamlit/config.toml` – dark theme.
 - `best_random_forest_model.pkl` – trained model (kept small; no PII).
-
-### Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
