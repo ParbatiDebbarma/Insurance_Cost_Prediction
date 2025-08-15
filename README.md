@@ -43,6 +43,7 @@ Deployed the application on **Streamlit Community Cloud** by preparing the proje
 
 ---
 
-## APP Link: https://insurancecostprediction-elqtq22jnkhtcd4ockjpt2.streamlit.app/
+## APP Link: 
+https://insurancecostprediction-elqtq22jnkhtcd4ockjpt2.streamlit.app/
 
 
