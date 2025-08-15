@@ -31,3 +31,18 @@ A complete ML workflow to predict health insurance premium prices and a Streamli
 - `requirements.txt` – Python deps.
 - `.streamlit/config.toml` – dark theme.
 - `best_random_forest_model.pkl` – trained model (kept small; no PII).
+
+
+
+---
+
+
+## 5) Deployment Steps
+
+Deployed the application on **Streamlit Community Cloud** by preparing the project folder with all required files (`app.py`, `requirements.txt`, `.streamlit/config.toml`, `best_random_forest_model.pkl`, and the project notebook) and pushing them to a public GitHub repository. The repository was then linked to Streamlit Cloud, where the app was successfully deployed and made accessible through a permanent public URL.
+
+---
+
+## APP Link: https://insurancecostprediction-elqtq22jnkhtcd4ockjpt2.streamlit.app/
+
+
