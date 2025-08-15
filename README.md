@@ -23,7 +23,7 @@ A complete ML workflow to predict health insurance premium prices and a Streamli
 | Gradient Boosting | 3305.16 | 1866.30 | 0.709 | Stable, slightly worse than RF |
 | MLP | 3950.15 | 2829.37 | 0.587 | Underperformed here |
 
-> Final choice: **RandomForestRegressor** trained on df/df_fe.  
+> Final choice: **RandomForestRegressor** trained on df.  
 > The Streamlit app accepts Height/Weight and computes BMI internally when needed.
 
 ## 4) Streamlit App (deployment files)
