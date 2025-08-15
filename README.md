@@ -10,7 +10,7 @@ A complete ML workflow to predict health insurance premium prices and a Streamli
 ## 2) Workflow (what’s in the notebook)
 - **EDA:** distributions, outliers, pairwise relationships.
 - **Hypothesis testing:** e.g., presence of chronic disease/diabetes increases average premium (t‑tests/ANOVA).
-- **Feature engineering:** computed BMI from height & weight; encoded binary flags.
+- **Feature engineering:** computed BMI from height & weight.
 - **Models tried:** Linear Regression, Decision Tree, Random Forest, Gradient Boosting, MLP.
 - **Evaluation:** 5‑fold CV with R² / RMSE / MAE; model comparison table.
 
